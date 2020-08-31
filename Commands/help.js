@@ -13,7 +13,10 @@ module.exports = {
 			data.push('Here\'s a list of all my commands:');
 			data.push(commands.map(command => command.name).join(', '));
 			data.push(`\nYou can send \`${prefix}help [command name]\` to get info on a specific command!`);
-			data.push(`\nYou can send \`${prefix}role [role name]\` to get info on a specific command!`);
+			data.push(`\nYou can send \`${prefix}role [role name]\` to get a role!`);
+			data.push(`\nYou can send \`${prefix}faq\` to see some frequently asked questions!`);
+			data.push(`\nYou can send \`${prefix}practice\` to see practice times!`);
+			data.push(`\nYou can send \`${prefix}ping\` to get a response from the bot! (This was mostly used for testing)`);
 
 			return message.author.send(data, { split: true })
 				.then(() => {
