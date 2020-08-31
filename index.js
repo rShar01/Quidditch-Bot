@@ -23,9 +23,6 @@ client.on('guildMemberAdd', member => {
 
 client.on('message', message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
-	if(message.member.user.tag === 'kyonami#3159') {
-		message.channel.send('Mike you are a dirty weeb');
-	}
 
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const commandName = args.shift().toLowerCase();
@@ -51,4 +48,4 @@ client.on('message', message => {
 	}
 });
 
-client.login('Njk1NDUwMDYyMjM0NTgzMTQy.XtL71Q.5l7WWoTY-tjeLCQi6yS7moPXSCk');
+client.login('Token here');
